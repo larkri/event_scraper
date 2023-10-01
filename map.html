@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="mapid" style="width: 800px; height: 600px;"></div>
+
+    <script>
+    var mymap = L.map('mapid').setView([59.3293, 18.0686], 13); // Koordinater för Stockholm
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(mymap);
+
+    // Funktion för att uppdatera kartan med nya händelser
+    function updateMap(events) {
+        console.log('Events received:', events);  // För debugändamål
+        for (let event of events) {
+            // Antag att 'location' har en 'gps'-nyckel med latitud och longitud separerade med komma
+            let gpsData = event.location.gps.split(',');
+            let latitude = parseFloat(gpsData[0]);
+            let longitude = parseFloat(gpsData[1]);
+
+            L.marker([latitude, longitude]).addTo(mymap);
+        }
+    }
+</script>
+
+</body>
+</html>
