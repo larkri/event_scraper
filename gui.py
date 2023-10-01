@@ -60,12 +60,29 @@ class App(QWidget):
     def filterData(self):
         try:
             selected_parameter = self.filterComboBox.currentText()
-            self.filtered_data = filterData(self.data, selected_parameter)  # Ändrat här
-            self.sendFilteredDataToMap()
-            self.updateEventTextEdit()
-            log_info(f"Data filtered by {selected_parameter}.")
+            self.filtered_data = filterData(self.data, selected_parameter)
+            if not self.filtered_data:
+                self.eventTextEdit.setText(f"Inga matchningar för händelsetypen '{selected_parameter}'.")
+                js_code = "clearMap()"
+                self.browser.page().runJavaScript(js_code)
+                log_info("Cleared the map.")
+            else:
+                self.sendFilteredDataToMap()
+                self.updateEventTextEdit(selected_parameter)
+                log_info(f"Data filtered by {selected_parameter}.")
         except Exception as e:
             log_exception(e)
+
+    def updateEventTextEdit(self, selected_parameter):
+        if selected_parameter == "Alla":
+            summary = self.generate_event_summary(self.data)
+            self.eventTextEdit.setText(summary)
+        else:
+            event_text = ""
+            for event in self.filtered_data:
+                event_text += f"ID: {event.get('id', 'N/A')}, Type: {event.get('type', 'N/A')}, Location: {event.get('location', 'N/A')}\n"
+            self.eventTextEdit.setText(
+                event_text if event_text else f"Inga matchningar för händelsetypen '{selected_parameter}'.")
 
     def loadJSON(self):
         try:

@@ -33,15 +33,10 @@
 
     // Funktion för att uppdatera kartan med nya händelser
     function updateMap(events) {
-        console.log('Events received:', events);  // För debugändamål
-        allEvents = events; // Spara alla händelser i allEvents-variabeln
+        console.log('Events received:', events);
+        allEvents = events;
 
-        // Rensa kartan
-        mymap.eachLayer(function (layer) {
-            if (layer instanceof L.Marker) {
-                mymap.removeLayer(layer);
-            }
-        });
+        clearMap();  // Rensa kartan
 
         // Visa bara de valda händelserna på kartan
         for (let event of events) {
@@ -53,31 +48,29 @@
         }
     }
 
-function filterMap() {
-    var selectedType = document.getElementById("filterType").value;
-    var last_10_events = allEvents.slice(-10);  // Ta de 10 senaste händelserna
-
-    // Filtrera och visa bara händelser av den valda typen
-    var filteredEvents = last_10_events.filter(function (event) {
-        return event.type.toLowerCase() === selectedType.toLowerCase();
-    });
-
-    // Kontrollera om några händelser matchade filtret
-    if (filteredEvents.length > 0) {
-        updateMap(filteredEvents);
-    } else {
-        // Rensa kartan om ingen matchning
+    // Funktion för att rensa kartan
+    function clearMap() {
         mymap.eachLayer(function (layer) {
             if (layer instanceof L.Marker) {
                 mymap.removeLayer(layer);
             }
         });
     }
-}
 
+    function filterMap() {
+        var selectedType = document.getElementById("filterType").value;
+        var last_10_events = allEvents.slice(-10);
 
-</script>
+        var filteredEvents = last_10_events.filter(function (event) {
+            return event.type.toLowerCase() === selectedType.toLowerCase();
+        });
 
-
+        if (filteredEvents.length > 0) {
+            updateMap(filteredEvents);
+        } else {
+            clearMap();  // Rensa kartan om ingen matchning
+        }
+    }
+    </script>
 </body>
 </html>
