@@ -6,6 +6,7 @@ import sys
 import json
 import os
 import datetime
+from logger import log_exception
 
 class App(QWidget):
 
@@ -52,28 +53,33 @@ class App(QWidget):
         return layout
 
     def loadJSON(self):
-        options = QFileDialog.Options()
-        filePath, _ = QFileDialog.getOpenFileName(self, "Load JSON file", "", "JSON Files (*.json)", options=options)
-        if filePath:
-            with open(filePath, 'r', encoding='utf-8') as f:
-                self.data = json.load(f)
-                event_count = len(self.data)
-                self.label.setText(f"Loaded {event_count} events from the JSON file.")
+        try:
+            options = QFileDialog.Options()
+            filePath, _ = QFileDialog.getOpenFileName(self, "Load JSON file", "", "JSON Files (*.json)", options=options)
+            if filePath:
+                with open(filePath, 'r', encoding='utf-8') as f:
+                    self.data = json.load(f)
+                    event_count = len(self.data)
+                    self.label.setText(f"Loaded {event_count} events from the JSON file.")
 
-                # Update file info label
-                last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(filePath)).strftime(
-                    '%Y-%m-%d %H:%M:%S')
-                self.fileInfoLabel.setText(f"File: {filePath}\nEvents: {event_count}\nLast Updated: {last_modified}")
+                    # Update file info label
+                    last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(filePath)).strftime(
+                        '%Y-%m-%d %H:%M:%S')
+                    self.fileInfoLabel.setText(f"File: {filePath}\nEvents: {event_count}\nLast Updated: {last_modified}")
 
-                # Display last 10 events in the QTextEdit
-                last_10_events = self.data[-10:]
-                event_text = ""
-                for event in last_10_events:
-                    event_text += f"ID: {event.get('id', 'N/A')}, Type: {event.get('type', 'N/A')}, Location: {event.get('location', 'N/A')}\n"
-                self.eventTextEdit.setText(event_text)
+                    # Display last 10 events in the QTextEdit
+                    last_10_events = self.data[-10:]
+                    event_text = ""
+                    for event in last_10_events:
+                        event_text += f"ID: {event.get('id', 'N/A')}, Type: {event.get('type', 'N/A')}, Location: {event.get('location', 'N/A')}\n"
+                    self.eventTextEdit.setText(event_text)
 
-                # i slutet av loadJSON
-                self.sendLast10EventsToMap()
+                    # i slutet av loadJSON
+                    self.sendLast10EventsToMap()
+
+        except Exception as e:
+            # Anropa log_exception för att logga undantaget
+            log_exception(e)
 
     def sendLast10EventsToMap(self):
         last_10_events = self.data[-10:]
@@ -83,5 +89,3 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec_())
-
-#Checking github
