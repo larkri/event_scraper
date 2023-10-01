@@ -1,4 +1,4 @@
-# my_logging.py
+# logger.py
 import logging
 
 logging.basicConfig(filename='my_app.log', level=logging.DEBUG)

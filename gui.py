@@ -1,11 +1,14 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QFileDialog, QLabel, QTextEdit
-from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage  # Fixat
-from PyQt5.QtWebChannel import QWebChannel  # Fixat
+# gui.py
+
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QFileDialog, QLabel, QTextEdit, QComboBox
+from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage
+from PyQt5.QtWebChannel import QWebChannel
 from PyQt5.QtCore import QUrl
 import sys
 import json
 import os
 import datetime
+from event_filter import updateEventTypeComboBox
 from logger import log_exception
 
 class App(QWidget):
@@ -13,44 +16,63 @@ class App(QWidget):
     def __init__(self):
         super().__init__()
         self.title = 'PyQt5 WebEngine'
-        self.data = []  # To hold loaded JSON data
+        self.data = []  # För att hålla JSON-data
+        self.filtered_data = []  # För att hålla filtrerad data
         self.initUI()
 
     def initUI(self):
         self.setWindowTitle(self.title)
-        self.setLayout(self.createLayout())
+        layout = self.createLayout()
+
+        # Lägg till en ComboBox för filtreringsparameter
+        self.filterComboBox = QComboBox()
+        layout.addWidget(self.filterComboBox)
+
+        self.setLayout(layout)
         self.show()
+
+        # Uppdatera ComboBox med händelsetyper från JSON-filen
+        updateEventTypeComboBox(self.data, self.filterComboBox)
 
     def createLayout(self):
         layout = QVBoxLayout()
 
-        # Label to show number of loaded events
+        # Label för att visa antalet laddade händelser
         self.label = QLabel("No events loaded yet")
         layout.addWidget(self.label)
 
-        # Label to show file statistics
+        # Label för att visa filstatistik
         self.fileInfoLabel = QLabel("No file loaded.")
         layout.addWidget(self.fileInfoLabel)
 
-        # Button to load JSON file
+        # Knapp för att ladda JSON-fil
         self.button = QPushButton('Load JSON File', self)
         self.button.clicked.connect(self.loadJSON)
         layout.addWidget(self.button)
 
-        # WebEngineView to display map
+        # WebEngineView för att visa kartan
         self.browser = QWebEngineView()
         self.browser.setUrl(QUrl("file:///C:/Users/KL/PycharmProjects/event_scraper/map.html"))
-        # Efter self.browser = QWebEngineView() i createLayout
         self.channel = QWebChannel()
         self.browser.page().setWebChannel(self.channel)
         layout.addWidget(self.browser)
 
-        # Text Edit for event details
+        # Textredigerare för händelsedetaljer
         self.eventTextEdit = QTextEdit()
         self.eventTextEdit.setReadOnly(True)
         layout.addWidget(self.eventTextEdit)
 
         return layout
+
+    def filterData(self):
+        # Hämta den valda parametern från ComboBox
+        selected_parameter = self.filterComboBox.currentText()
+
+        # Använd filtreringsfunktionen från filter.py för att filtrera datan
+        self.filtered_data = filterData(self.data, selected_parameter)
+
+        # Uppdatera kartan med de filtrerade händelserna
+        self.sendFilteredDataToMap()
 
     def loadJSON(self):
         try:
@@ -62,19 +84,19 @@ class App(QWidget):
                     event_count = len(self.data)
                     self.label.setText(f"Loaded {event_count} events from the JSON file.")
 
-                    # Update file info label
+                    # Uppdatera informationsetiketten om filen
                     last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(filePath)).strftime(
                         '%Y-%m-%d %H:%M:%S')
                     self.fileInfoLabel.setText(f"File: {filePath}\nEvents: {event_count}\nLast Updated: {last_modified}")
 
-                    # Display last 10 events in the QTextEdit
+                    # Visa de senaste 10 händelserna i QTextEdit
                     last_10_events = self.data[-10:]
                     event_text = ""
                     for event in last_10_events:
                         event_text += f"ID: {event.get('id', 'N/A')}, Type: {event.get('type', 'N/A')}, Location: {event.get('location', 'N/A')}\n"
                     self.eventTextEdit.setText(event_text)
 
-                    # i slutet av loadJSON
+                    # I slutet av loadJSON
                     self.sendLast10EventsToMap()
 
         except Exception as e:
@@ -84,6 +106,18 @@ class App(QWidget):
     def sendLast10EventsToMap(self):
         last_10_events = self.data[-10:]
         self.browser.page().runJavaScript(f"updateMap({json.dumps(last_10_events)})")
+
+    def sendFilteredDataToMap(self):
+        # Kontrollera om det finns någon filtrerad data
+        if self.filtered_data:
+            # Skapa en JavaScript-kod för att skicka den filtrerade datan till kartan
+            js_code = f"updateMap({json.dumps(self.filtered_data)})"
+            # Använd runJavaScript-metoden för att köra JavaScript-koden på webbsidan
+            self.browser.page().runJavaScript(js_code)
+        else:
+            # Om det inte finns någon filtrerad data, rensa kartan genom att skicka en tom lista
+            js_code = "clearMap()"
+            self.browser.page().runJavaScript(js_code)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

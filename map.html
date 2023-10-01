@@ -10,6 +10,17 @@
 <body>
     <div id="mapid" style="width: 800px; height: 600px;"></div>
 
+    <div>
+        <label for="filterType">Filter by Type:</label>
+        <select id="filterType">
+            <option value="all">All</option>
+            <option value="fire">Fire</option>
+            <option value="accident">Accident</option>
+            <!-- Lägg till fler typer här -->
+        </select>
+        <button onclick="filterMap()">Apply Filter</button>
+    </div>
+
     <script>
     var mymap = L.map('mapid').setView([59.3293, 18.0686], 13); // Koordinater för Stockholm
 
@@ -17,11 +28,23 @@
         attribution: '© OpenStreetMap contributors'
     }).addTo(mymap);
 
+    // Här lagrar vi alla händelser
+    var allEvents = [];
+
     // Funktion för att uppdatera kartan med nya händelser
     function updateMap(events) {
         console.log('Events received:', events);  // För debugändamål
+        allEvents = events; // Spara alla händelser i allEvents-variabeln
+
+        // Rensa kartan
+        mymap.eachLayer(function (layer) {
+            if (layer instanceof L.Marker) {
+                mymap.removeLayer(layer);
+            }
+        });
+
+        // Visa bara de valda händelserna på kartan
         for (let event of events) {
-            // Antag att 'location' har en 'gps'-nyckel med latitud och longitud separerade med komma
             let gpsData = event.location.gps.split(',');
             let latitude = parseFloat(gpsData[0]);
             let longitude = parseFloat(gpsData[1]);
@@ -29,7 +52,32 @@
             L.marker([latitude, longitude]).addTo(mymap);
         }
     }
+
+// Funktion för att filtrera kartan baserat på valt filter
+function filterMap() {
+    var selectedType = document.getElementById("filterType").value;
+
+    // Om "All" är valt, visa alla händelser
+    if (selectedType === "All") {
+        updateMap(allEvents);
+    } else {
+        // Filtrera och visa bara händelser av den valda typen
+        var filteredEvents = allEvents.filter(function (event) {
+            return event.type.toLowerCase() === selectedType.toLowerCase();
+        });
+
+        // Kontrollera om några händelser matchade filtret
+        if (filteredEvents.length > 0) {
+            updateMap(filteredEvents);
+        } else {
+            alert("Inga händelser av den valda typen hittades.");
+        }
+    }
+}
+
+
 </script>
+
 
 </body>
 </html>
