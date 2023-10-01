@@ -42,3 +42,219 @@ INFO:root:Cleared the map.
 INFO:root:Data filtered by Våldtäkt, försök.
 INFO:root:Cleared the map.
 INFO:root:Data filtered by Stöld, försök.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Alkohollagen.
+INFO:root:Sent last 10 events to the map.
+INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Anträffad död.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by .
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Alkohollagen.
+INFO:root:Sent last 10 events to the map.
+INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Brand.
+INFO:root:Sent last 10 events to the map.
+INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by .
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Alkohollagen.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Brand automatlarm.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by .
+INFO:root:Cleared the map.
+INFO:root:Data filtered by 1Alla.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by .
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Alkohollagen.
+INFO:root:Cleared the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Sent last 10 events to the map.
+INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'generate_event_summary' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 83, in filterData
+    self.updateEventTextEdit()
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 139, in updateEventTextEdit
+    summary = generate_event_summary(self.data)
+NameError: name 'generate_event_summary' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'generate_event_summary' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 83, in filterData
+    self.updateEventTextEdit()
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 139, in updateEventTextEdit
+    summary = generate_event_summary(self.data)
+NameError: name 'generate_event_summary' is not defined
+INFO:root:Sent last 10 events to the map.
+INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'generate_event_summary' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 83, in filterData
+    self.updateEventTextEdit()
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 139, in updateEventTextEdit
+    summary = generate_event_summary(self.data)
+NameError: name 'generate_event_summary' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'generate_event_summary' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 83, in filterData
+    self.updateEventTextEdit()
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 139, in updateEventTextEdit
+    summary = generate_event_summary(self.data)
+NameError: name 'generate_event_summary' is not defined
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: name 'generate_event_summary' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 83, in filterData
+    self.updateEventTextEdit()
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 139, in updateEventTextEdit
+    summary = generate_event_summary(self.data)
+NameError: name 'generate_event_summary' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'event_count' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 75, in loadJSON
+    log_info(f"{event_count} events loaded from {filePath}.")
+NameError: name 'event_count' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'event_count' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 75, in loadJSON
+    log_info(f"{event_count} events loaded from {filePath}.")
+NameError: name 'event_count' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'event_count' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 75, in loadJSON
+    log_info(f"{event_count} events loaded from {filePath}.")
+NameError: name 'event_count' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'event_count' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 75, in loadJSON
+    log_info(f"{event_count} events loaded from {filePath}.")
+NameError: name 'event_count' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'event_count' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 75, in loadJSON
+    log_info(f"{event_count} events loaded from {filePath}.")
+NameError: name 'event_count' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: name 'event_count' is not defined
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 75, in loadJSON
+    log_info(f"{event_count} events loaded from {filePath}.")
+NameError: name 'event_count' is not defined
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'
+INFO:root:Sent filtered data to the map.
+ERROR:root:Det uppstod ett fel: 'App' object has no attribute 'updateEventTextEdit'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 65, in filterData
+    self.updateEventTextEdit()
+AttributeError: 'App' object has no attribute 'updateEventTextEdit'

@@ -1,8 +1,9 @@
 # event_filter.py
 
-# Lista med händelsetyper
+
 # Lista med händelsetyper
 desired_event_types = [
+    "Alla",
     "Alkohollagen",
     "Anträffad död",
     "Anträffat gods",
@@ -92,16 +93,13 @@ desired_event_types = [
     "Vållande till kroppsskada",
 ]
 
-
 def filterData(data, selected_parameter):
-    if selected_parameter == "All":
+    if selected_parameter == "Alla":
         return data  # Visa alla händelser
     elif selected_parameter in desired_event_types:
         return [event for event in data if event.get('type', 'N/A') == selected_parameter]
     else:
-        return []  # Returnera en tom lista om vald parameter inte finns i önskade eventtyper
-
-
+        return []
 
 def updateEventTypeComboBox(data, filterComboBox):
     # Skapa en tom lista för att lagra unika händelsetyper

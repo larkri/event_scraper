@@ -53,25 +53,25 @@
         }
     }
 
-// Funktion för att filtrera kartan baserat på valt filter
 function filterMap() {
     var selectedType = document.getElementById("filterType").value;
+    var last_10_events = allEvents.slice(-10);  // Ta de 10 senaste händelserna
 
-    // Om "All" är valt, visa alla händelser
-    if (selectedType === "All") {
-        updateMap(allEvents);
+    // Filtrera och visa bara händelser av den valda typen
+    var filteredEvents = last_10_events.filter(function (event) {
+        return event.type.toLowerCase() === selectedType.toLowerCase();
+    });
+
+    // Kontrollera om några händelser matchade filtret
+    if (filteredEvents.length > 0) {
+        updateMap(filteredEvents);
     } else {
-        // Filtrera och visa bara händelser av den valda typen
-        var filteredEvents = allEvents.filter(function (event) {
-            return event.type.toLowerCase() === selectedType.toLowerCase();
+        // Rensa kartan om ingen matchning
+        mymap.eachLayer(function (layer) {
+            if (layer instanceof L.Marker) {
+                mymap.removeLayer(layer);
+            }
         });
-
-        // Kontrollera om några händelser matchade filtret
-        if (filteredEvents.length > 0) {
-            updateMap(filteredEvents);
-        } else {
-            alert("Inga händelser av den valda typen hittades.");
-        }
     }
 }
 
