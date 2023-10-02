@@ -282,3 +282,13 @@ INFO:root:Data filtered by Bråk.
 INFO:root:Sent filtered data to the map.
 INFO:root:Data filtered by Bedrägeri.
 INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Bedrägeri.
