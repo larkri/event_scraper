@@ -288,7 +288,668 @@ INFO:root:Cleared the map.
 INFO:root:500 events loaded from C:/Users/KL/PycharmProjects/event_scraper/all_police_events.json.
 INFO:root:Sent filtered data to the map.
 INFO:root:Data filtered by Alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Bedrägeri.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Knivlagen.
+INFO:root:Cleared the map.
 INFO:root:Cleared the map.
 INFO:root:Cleared the map.
 INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Sedlighetsbrott.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 131, in loadJSON
+    last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(filePath)).strftime(
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Bråk.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 16.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 17.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 18.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 20.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 21.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 22.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 23.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 23.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 22.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 21.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 20.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 18.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 17.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 16.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+ERROR:root:Det uppstod ett fel: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 131, in loadJSON
+    last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(filePath)).strftime(
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 16.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 17.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 18.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 20.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 21.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 22.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 23.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 23.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 22.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 21.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 20.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 18.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 17.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 16.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 16.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 17.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 18.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
 INFO:root:Data filtered by Bedrägeri.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 22.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by Alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 136, in loadJSON
+    last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(filePath)).strftime(
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0 and type alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 16.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 17.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 18.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 20.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 21.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 22.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 23.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 22.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 21.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 20.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 19.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 18.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 17.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 16.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+ERROR:root:Det uppstod ett fel: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "C:\Users\KL\PycharmProjects\event_scraper\gui.py", line 136, in loadJSON
+    last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(filePath)).strftime(
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 0 and type alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 1 and type alla.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 3 and type alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 4 and type alla.
+INFO:root:Cleared the map.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 6 and type alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7 and type alla.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 7 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 8 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 9 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 10 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 11 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 12 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 13 and type brand.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 14.
+INFO:root:Cleared the map.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15.
+INFO:root:Sent filtered data to the map.
+INFO:root:Data filtered by time 15 and type brand.
